@@ -1,60 +1,21 @@
 /*---------------------------------------------------------------------------------
 gjør endringer i koden 
-a) legg til en if else som skriver ut i serial monitor 
-   "tall a er større en tall b",
-   "tall b er større en tall a",
-   "tall a er lik tall b"
-b) 
+a) Lag en kode som gjør slik at hvis en pushbutton er trykket inn vil en lysdiode lyse.
+    og hvis knappen ikke er trykket vil en annen lysdiode lyse.
+b) Endre koden slik at når du trykker knapp en vil du starte en funksjon som gjør at lysdiode
+    1. blinke 3 ganger med 1 sekund på og 1 sekund avtid.
+c) Endre koden slik at du kan slik at det skrives ut i serial monitor tiden du holdt knappen inne.   
 -----------------------------------------------------------------------------------*/
 
-int a = 9;
-int b = 8;
-int sum = 0;
-int led = 13;
+
 void setup() 
     {
         Serial.begin(9600);
-        pinMode(led, OUTPUT);
+       
     }
 
 
 void loop() 
     {
-        if (a < b)
-            {
-                Serial.println("b er større en a");
-                fastBlink();
-            }
-        else if (a > b)
-            {
-                Serial.println("a er større en b");
-                slowBlink();
-            }
-        else
-            {
-                Serial.println("a er lik  b");
-            }
-        delay(1000);               
+        
     }
-
-    void fastBlink ()
-    {
-        for (int i = 0; i < 10; i++)
-        {
-            digitalWrite(led, HIGH);
-            delay(1000);
-            digitalWrite(led, LOW);
-            delay(1000);
-        }
-    }
-    void slowBlink ()
-        {
-            for (int i = 0; i < 20; i++)
-            {
-                digitalWrite(led, HIGH);
-                delay(500);
-                digitalWrite(led, LOW);
-                delay(500);
-            }
-            
-        }
