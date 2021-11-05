@@ -1,10 +1,14 @@
 /*---------------------------------------------------------------------------------
-gjør endringer i koden 
-a) Lag en kode som gjør slik at hvis en pushbutton er trykket inn vil en lysdiode lyse.
-    og hvis knappen ikke er trykket vil en annen lysdiode lyse.
-b) Endre koden slik at når du trykker knapp en vil du starte en funksjon som gjør at lysdiode
-    1. blinke 3 ganger med 1 sekund på og 1 sekund avtid.
-c) Endre koden slik at du kan slik at det skrives ut i serial monitor tiden du holdt knappen inne.   
+gjør endringer i koden slik at vi får en enkel alarm sentra med en bryter som aktiverer alarmen 
+og en PIR som utløser alarmen
+a) Hvis det går en alarm skal en lysdiode lyse
+b) hvis alarsentralen er av skal en grønn lysdiode lyse og vis, detektoren utløser da ikke en alarm.
+   hvis alarmsentralen er aktivert med bryteren skal detektoren kunne utløse en alarm.
+c) hvis alarsentralen er av skal en grønn lysdiode lyse, detektoren utløser da ikke en alarm.
+   hvis alarsentralen er på skal en gul lysdiode lyse, detektoren utløser da en alarm 
+   og en rød lysdiode skal blinke 10 ganger.
+   På og av knappen skal her være en pushbutton.
+   hvis alarmen utløses skal du kunne avbryte med en pushbutton.
 -----------------------------------------------------------------------------------*/
 
 
